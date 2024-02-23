@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Название компании - самая клевая компания!</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="mainelements">
+      <header class="header">
+        <div class="container ">
+          <div class="headerlogo"><img src="./images/logo.png" alt="тут мав бути логотип" class="logo" width="273" height="100"></div>
+          <div class="headercontacts">
+            <p class="headerphones">
+              <a href="#" class="headerphone">+7 (499) 777-77-77</a>
+              <a href="#" class="headerphone">+7 (499) 777-77-77</a>
+            </p>
+            <a href="javascript:PopUpShow()" class="CloseButton">Обратная связь</a>
+          </div>
+        </div>
+      </header>
+    
+      <nav class="menu">
+        <div class="container">
+          <ul class="menuinner">
+            <li class="menuitem"><a href="index.html" class="menulink">Главная</a></li>
+            <li class="menuitem"><a href="#" class="menulink">Каталог</a></li>
+            <li class="menuitem"><a href="#" class="menulink">Доставка и оплата</a></li>
+            <li class="menuitem"><a href="#" class="menulink">Прайс-лист</a></li>
+            <li class="menuitem"><a href="#" class="menulink menulink_last">Контакты</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="burgermenu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu__box">
+          <li class="menu__item"><a href="index.html" class="menulink">Главная</a></li>
+          <li class="menu__item"><a href="#" class="menulink">Каталог</a></li>
+          <li class="menu__item"><a href="#" class="menulink">Доставка</a></li>
+          <li class="menu__item"><a href="#" class="menulink">Оплата</a></li>
+          <li class="menu__item"><a href="#" class="menulink">Прайс-лист</a></li>
+          <li class="menu__item"><a href="#" class="menulink menulink_last">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="slider" role="region" aria-label="Slider">
+        <div class="slider_slide slider_slide-1 slider_slide_show"></div>
+        <div class="slider_slide slider_slide-2"></div>
+        <div class="container">
+            <div class="slider_controls">
+              <button class="slider_style slider_button_prev" aria-label="Previous Slide"></button>
+              <button class="slider_style slider_button_next" aria-label="Next Slide"></button>
+            </div>
+        </div>
+      </div>
+    
+      <main class="content">
+        <div class="container ">
+          <nav class="goods_tree">
+            <ul class="goods_tree_inner">
+              <li class="nav_item"><a href="index.html" class="nav_link">Главная</a></li>
+              <li class="nav_item"><a href="#" class="nav_link">Каталог</a></li>
+              <li class="nav_item nav_item_now"><a href="#" class="nav_link nav_link_current">Бытовая техника</a></li>
+            </ul>
+          </nav>
+          <div class="good_catalog">
+            <ul class="side_nav">
+              <li class="side_nav_item"><a href="#" class="side_nav_link">Автомобили</a></li>
+              <li class="side_nav_item"><a href="#" class="side_nav_link side_nav_link_current">Бытовая техника</a>
+                <ul class="side_nav-inner">
+                  <li class="side_nav-inner-item"><a href="#" class="side_nav_inner_link side_nav_inner_link_current">ㅤМикроволновки</a></li>
+                  <li class="side_nav-inner-item"><a href="#" class="side_nav_inner_link">ㅤХолодильники</a></li>
+                  <li class="side_nav-inner-item"><a href="#" class="side_nav_inner_link">ㅤПосудомоечные машины</a></li>
+                  <li class="side_nav-inner-item"><a href="#" class="side_nav_inner_link">ㅤЧайники</a></li>
+                </ul>
+              </li>
+              <li class="side_nav_item"><a href="#" class="side_nav_link">Мобильная техника</a></li>
+              <li class="side_nav_item"><a href="#" class="side_nav_link">Компьютеры</a></li>
+              <li class="side_nav_item"><a href="#" class="side_nav_link">Одежда</a></li>
+              <li class="side_nav_item"><a href="#" class="side_nav_link">Недвижимость</a></li>
+            </ul>
+            <a class="menu_button" href="javascript:MenuShow()"></a>
+            <div class="burgermenu2" id="burgermenu2">
+              <ul class="side_nav">
+                <li class="side_nav_item"><a href="#" class="side_nav_link">Автомобили</a></li>
+                <li class="side_nav_item"><a href="#" class="side_nav_link side_nav_link_current">Бытовая техника</a></li>
+                <li class="side_nav_item"><a href="#" class="side_nav_link">Мобильная техника</a></li>
+                <li class="side_nav_item"><a href="#" class="side_nav_link">Компьютеры</a></li>
+                <li class="side_nav_item"><a href="#" class="side_nav_link">Одежда</a></li>
+                <li class="side_nav_item"><a href="#" class="side_nav_link">Недвижимость</a></li>
+              </ul>
+            </div>
+            <p class="price_list">
+              <a href="#" class="pricelist_download" download></a>
+              <span></span>
+            </p>
+          </div>
+          
+          
+          <div class="items">
+            
+            <article class="good_item">
+              <figure class="good_item-figure">
+                <img src="./images/good.jpg" alt="товар" class="good_image">
+                <figcaption class="item_caption">Самый клевый чайник, который надо купить!</figcaption>
+              </figure>
+              <p class="item_price">1 900 р. <a href="#" class="add_to_card"></a></p>
+            </article>
+            
+            <article class="good_item">
+              <figure class="good_item-figure">
+                <img src="./images/good.jpg" alt="товар" class="good_image">
+                <figcaption class="item_caption">Самый клевый чайник, который надо купить!</figcaption>
+              </figure>
+              <p class="item_price">1 900 р. <a href="#" class="add_to_card"></a></p>
+            </article>
+            
+            <article class="good_item">
+              <figure class="good_item-figure">
+                <img src="./images/good.jpg" alt="товар" class="good_image">
+                <figcaption class="item_caption">Самый клевый чайник, который надо купить!</figcaption>
+              </figure>
+              <p class="item_price">1 900 р. <a href="#" class="add_to_card"></a></p>
+            </article>
+            
+            <article class="good_item">
+              <figure class="good_item-figure">
+                <img src="./images/good.jpg" alt="товар" class="good_image">
+                <figcaption class="item_caption">Самый клевый чайник, который надо купить!</figcaption>
+              </figure>
+              <p class="item_price">1 900 р. <a href="#" class="add_to_card"></a></p>
+            </article>
+            
+            <article class="good_item">
+              <figure class="good_item-figure">
+                <img src="./images/good.jpg" alt="товар" class="good_image">
+                <figcaption class="item_caption">Самый клевый чайник, который надо купить!</figcaption>
+              </figure>
+              <p class="item_price">1 900 р. <a href="#" class="add_to_card"></a></p>
+            </article>
+            
+            <div class="pages">
+              <a href="#" class="page">1</a>
+              <a href="#" class="page">2</a>
+              <a href="#" class="page page_now">3</a>
+              <a href="#" class="page">4</a>
+              <a href="#" class="page">5</a>
+              <a href="#" class="page">6</a>
+              <a href="#" class="page">7</a>
+            </div>
+            <div class="companyinfo ">
+              <p class="companyinfo_column companyinfo_column_left">
+              Компания «Пиксель Плюс» существует более 6 лет, за это время мы
+              принимали участие в разработке более чем 700&nbsp;сайтов, поэтому можем
+              уверенно называть себя профессионалами. На данный момент наш
+              коллектив состоит из более чем 30 сотрудников работающих в двух
+              офисах в Москве и Зеленограде.характерные для этого жанра мотивы:
+              неразделённой любви, ухода молодости, угасания души. 
+              </p>
+              <p class="companyinfo_column companyinfo_column_right">
+              Одним из основных направлений работ нашей компании является
+              поисковое продвижение сайтов, на данной момент мы работаем
+              с более чем 150 постоянными клиентами по более чем 11 000 поисковым
+              запросам.<br> При этом в работе основной акцент мы делаем на качестве
+              работ, а так же применяем собственные уникальные разработки в
+              области SEO продвижения. На данный момент отдел SEO состоит из
+              9 человек под руководством ведущего специалиста, преимущественно
+              работающих в нашем московском офисе.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="push"></div>
+    </div>
+
+    <footer class="footer">
+      <div class="container clearfix">
+        <section class="footer__column footer__contacts">
+          <p class="footer__copyright">© 2012 &ndash; 2013 ЗАО &#171;Компания&#187;</p>
+          <a href="#" class="footer__email">info@name.ru</a>
+        </section>
+        <section class="footer__column footer__nav">
+          <ul class="footer__nav-inner">
+            <li class="footer__nav-item"><a href="index.html" class="footer__nav-link">Главная</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Каталог</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Доставка и оплата</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Прайс-лист</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Контакты</a></li>
+          </ul>
+        </section>
+        <section class="footer__column footer__additional">
+          <p class="pixel-plus-logo">
+            <a href="#" class="pixel-plus-link">Разработка сайта</a>&nbsp;&ndash;<br>компания&nbsp;&#171;Пиксель&nbsp;Плюс&#187;
+          </p>
+        </section>
+      </div>
+    </footer>
+
+    <div class="b-popup" id="popup1">
+      <div class="b-popup-content">
+        <a href="javascript:PopUpHide()" id="CloseButton"><img src="./images/close.png" width="27" height="27"></a>
+        <h2 style="text-align: center;">ОБРАТНАЯ СВЯЗЬ</h2>
+        <form id="feedbackForm">
+          <label for="name">Ваше имя *</label><br>
+          <input type="text" id="name" name="name" required onblur="validateField(this)"><br>
+    
+          <label for="phone">Телефон *</label><br>
+          <input type="tel" id="phone" name="phone" required onblur="validateField(this)"><br>
+    
+          <label for="email">Email *</label><br>
+          <input type="email" id="email" name="email" required onblur="validateField(this)"><br>
+    
+          <label for="message">Сообщение</label><br>
+          <textarea id="message" onblur="validateField(this)"></textarea><br>
+    
+          <button type="button" id="submitBtn" onclick="validateForm()" style="margin-left: auto; margin-right: auto; display: block;">ОТПРАВИТЬ</button>
+        </form> 
+      </div> 
+    </div>
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
